@@ -1,7 +1,7 @@
 var args = process.argv.slice(2);
 
 var Nightmare = require('nightmare');
-var browser = Nightmare({ show: true });
+var browser = Nightmare();
 
 browser.goto(args[0]);
 
