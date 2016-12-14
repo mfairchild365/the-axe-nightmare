@@ -1,0 +1,7 @@
+{
+  "name": "axe-nightmare",
+  "dependencies": {
+    "axe-core": "^2.1.7",
+    "nightmare": "^2.8.1"
+  }
+}
