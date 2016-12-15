@@ -1,4 +1,6 @@
 #The axe nightmare
+[![Build Status](https://travis-ci.org/mfairchild365/the-axe-nightmare.svg?branch=master)](https://travis-ci.org/mfairchild365/the-axe-nightmare)
+
 The aXe Nightmare (sorry, I couldn't pass that name up) runs the the [aXe-core](https://github.com/dequelabs/axe-core) accessibility checker against a webpage using [nightmare.js](https://github.com/segmentio/nightmare) headless browser (a Chromium based alternative to a phantomjs).
 
 This project is just a proof of concept to see how well nightmare.js actually works with aXe on headless servers. I made it to specifically address performance issuses cause by the webkit based phantomjs. For example, webkit is missing the `elementsFromPoint()` function which provides a huge performance boost in aXe. I was seeing pages that were taking >10min to scan in webkit now being scanned in <10seconds in Chromium.
