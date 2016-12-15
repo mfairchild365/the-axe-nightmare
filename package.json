@@ -2,6 +2,8 @@
   "name": "axe-nightmare",
   "dependencies": {
     "axe-core": "^2.1.7",
-    "nightmare": "^2.8.1"
+    "electron-prebuilt": "^1.4.12",
+    "nightmare": "^2.8.1",
+    "xvfb-maybe": "^0.1.3"
   }
 }
