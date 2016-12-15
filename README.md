@@ -5,6 +5,18 @@ The aXe Nightmare (sorry, I couldn't pass that name up) runs the the [aXe-core](
 
 This project is just a proof of concept to see how well nightmare.js actually works with aXe on headless servers. I made it to specifically address performance issuses cause by the webkit based phantomjs. For example, webkit is missing the `elementsFromPoint()` function which provides a huge performance boost in aXe. I was seeing pages that were taking >10min to scan in webkit now being scanned in <10seconds in Chromium.
 
+##Why nightmare.js instead of phantomjs
+
+In my eperience:
+* phantomjs is based on webkit which lags behind other browsers by a year or two
+* huge benefit in terms of performance boost (see above)
+* easy to debug as you can set a flag in nightmare.js to see the browser window while developing, while phantomjs does not have that option
+* nightmare.js has a better api (in my personal opinion)
+
+Potential things to investigate
+* How performant is nightmare.js compared to phantomjs
+* How stable is nightmare.js compared to phantomjs
+
 ## Useage
 ```
 ./node_modules/xvfb-maybe/src/xvfb-maybe.js node the-axe-nightmare.js "http://google.com/"
